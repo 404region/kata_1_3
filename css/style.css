@@ -1,0 +1,119 @@
+html {
+    box-sizing: border-box;
+}
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+/* Так и почему магия выше не работает у меня на ховерах? у меня бразуер старый или я что то делаю не так?
+ Хром 100 - вроде должно работать.
+ В других моих браузерах тоже не работает - когда наводишь на пункт меню происходит скачок размеров при появлении рамки */
+
+/* Обнуляем границу у кнопок, не понимаю почему не обнуляется в reset.css */
+button {
+    border: none;
+    font: inherit;
+    background: inherit;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    background-color: #F8F8F8;
+}
+.page {
+    font-family: 'TT Lakes Regular';
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*justify-content: space-between;*/
+    min-height: 88px;
+    background-color: #fff;
+}
+.line {
+    width: 2px;
+    height: 32px;
+    background: #EAEAEA;
+    border-radius: 1px;
+}
+.menu-item {
+    height: 40px;
+    width: 40px;
+}
+.menu-btn {
+    background: url("../images/menu.svg");
+}
+.check-repair-status-btn {
+    background: url("../images/status.svg");
+}
+.submit-btn {
+    background: url("../images/repair.svg");
+}
+.content-header {
+    padding: 24px 12px;
+    background: url("/images/highlight.svg") no-repeat 0 16px;
+}
+.title {
+    /* в фигме 28px шрифт - в браузере 16px значит 28/16 = нужное нам значение 1.75 em */
+    font-size: 1.75em;
+}
+.services-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.services-list__item {
+    flex: 0 0 auto;
+    font-size: 1em;
+    font-color: #7E7E82;
+    padding: 8px 9px 8px 16px;
+    line-height: 1.5em;
+
+    /* Фича=) чтобы не было скачка размеров элемента при наведении.
+    Я думала с этим справиться box-sizing: border-box, но почему то нет*/
+    border: 2px solid #F8F8F8;
+    border-radius: 6px;
+}
+.services-list__item:hover {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.about {
+    padding: 24px 16px 16px 16px;
+}
+.about__about-text {
+    /* Вроде я правильно посчитала размеры - почему шрифт не как на макете? */
+    font-size: 0.875em;
+    line-height:  1.125em;
+}
+.about__read-more-btn {
+    font-size: 1em;
+    line-height: 1.5em;
+    background: url("/images/expand.svg") no-repeat 0 14px;
+    padding: 16px 0px 0px 32px;
+}
+.content-image {
+    width: 320px;
+}
+
+/* This applies from 0px to 600px
+@media (max-width: 600px) {
+    body {
+        background: red;
+    }
+}
+ */
+
+/* This applies from 768px onwards */
+@media (min-width: 768px) {
+  body {
+    background: green;
+  }
+}
+
+

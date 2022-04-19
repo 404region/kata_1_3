@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Услуги и сервисы</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+
+   </head>
+   <body>
+   <!--
+       Создаем блок для любого независимого блока
+       Создаем блок когда нужно создать служебный блок
+       Допустима любая вложенность блоков
+       __
+       Элменты в Дом дереве могут иметь любую вложенность (можно вкладывать элементы в элементы)
+       Но в Бэм дереве элементы не могут быть вложенны в элементы
+       (у всех элементов родитель блок, независимо от вложенности в html)
+       --
+       блок__элемент--модификатор миксин (header__menu menu)
+   //-->
+   <div class="page">
+       <header class="header">
+           <div class="menu">
+               <button class="menu-btn menu-item"></button>
+           </div>
+           <div class="logo">
+               <img alt="logo" src="content/logo.svg">
+           </div>
+           <div class="line"></div>
+           <div class="submit menu-item">
+               <button class="menu-item submit-btn"></button>
+           </div>
+           <div class="check-repair-status menu-item">
+               <button class="menu-item check-repair-status-btn"></button>
+           </div>
+       </header>
+       <main>
+           <div class="content-header">
+               <h1 class="content-header__title title">Услуги и сервисы</h1>
+           </div>
+           <div class="services-list">
+               <button class="services-list__item">Ремонтируемые устройства</button>
+               <button class="services-list__item">Ремонтируемые бренды</button>
+               <button class="services-list__item">Цены на услуги</button>
+               <button class="services-list__item">Адреса сервисных центров</button>
+               <button class="services-list__item">Специальные цены</button>
+           </div>
+           <div class="about">
+               <div class="about__about-text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</div>
+               <button class="about__read-more-btn">Читать далее</button>
+           </div>
+           <img class="content-image" src="content/bg.jpg">
+       </main>
+   </div>
+
+</body>
+</html>
