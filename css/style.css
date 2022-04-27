@@ -26,9 +26,10 @@ body {
 .page {
     font-family: 'TT Lakes Regular';
 }
-.container-margin {
-}
 .header {
+    background-color: #fff;
+}
+.header__container {
     display: flex;
     align-items: center;
     padding-left: 16px;
@@ -36,7 +37,6 @@ body {
     /*justify-content: space-around;*/
     justify-content: space-between;
     min-height: 88px;
-    background-color: #fff;
     margin-right: 16px;
 }
 .header__flex-box {
@@ -93,12 +93,10 @@ body {
 .services-list__item {
     flex: 0 0 auto;
     font-size: 1em;
-    font-color: #7E7E82;
+    color: #7E7E82;
     padding: 8px 9px 8px 16px;
     line-height: 1.5em;
     letter-spacing: 0.2px;
-    color: #7E7E82;
-
 
     /* Фича=) бордер в цвет фона, чтобы не было скачка размеров элемента при наведении.
     Я думала с этим справиться box-sizing: border-box, но почему то нет*/
@@ -131,7 +129,10 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
     background: url("/images/expand.svg") no-repeat 0 14px;
-    padding: 16px 0px 0px 32px;
+    padding: 16px 0 0 32px;
+}
+.about__p--margin {
+    margin-bottom: 1.5rem;
 }
 .content-image {
     padding-top: 16px;
