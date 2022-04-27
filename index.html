@@ -21,21 +21,27 @@
        блок__элемент--модификатор миксин (header__menu menu)
    //-->
    <div class="page">
+       <div class="container-margin">
        <header class="header">
-           <div class="menu">
-               <button class="menu-btn menu-item"></button>
+           <div class="header__flex-box">
+               <div class="menu header-item header-item--padding-right">
+                   <button class="menu-btn menu-item"></button>
+               </div>
+               <div class="logo header-item  header-item--padding-right">
+                   <a href="#"><img alt="logo" src="content/logo.svg"></a>
+               </div>
+               <div class="line"></div>
            </div>
-           <div class="logo">
-               <img alt="logo" src="content/logo.svg">
-           </div>
-           <div class="line"></div>
-           <div class="submit menu-item">
-               <button class="menu-item submit-btn"></button>
-           </div>
-           <div class="check-repair-status menu-item">
-               <button class="menu-item check-repair-status-btn"></button>
+           <div class="header__flex-box">
+               <div class="submit menu-item header-item--padding-right">
+                   <button class="menu-item submit-btn"></button>
+               </div>
+               <div class="check-repair-status menu-item header-item--padding-left">
+                   <button class="menu-item check-repair-status-btn"></button>
+               </div>
            </div>
        </header>
+       </div>
        <main>
            <div class="content-header">
                <h1 class="content-header__title title">Услуги и сервисы</h1>
@@ -47,11 +53,19 @@
                <button class="services-list__item">Адреса сервисных центров</button>
                <button class="services-list__item">Специальные цены</button>
            </div>
-           <div class="about">
-               <div class="about__about-text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</div>
-               <button class="about__read-more-btn">Читать далее</button>
+           <div class="content content--flex">
+               <div class="about">
+                   <div class="about__about-text">
+                       <div class="about__text-block">
+                           <p calss="about__p">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br></p>
+
+                            <p calss="about__p">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+                       </div>
+                   </div>
+                   <button class="about__read-more-btn">Читать далее</button>
+               </div>
+               <img class="content-image" src="content/bg.jpg">
            </div>
-           <img class="content-image" src="content/bg.jpg">
        </main>
    </div>
 
