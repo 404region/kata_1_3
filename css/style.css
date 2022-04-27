@@ -141,21 +141,32 @@ body {
 .content {
     /* padding: 32px 25px 40px 24px; */
 }
+.reviews {
+    display: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.2px;
+    padding-left: 32px;
+    padding-top: 14.35px;
+}
+.reviews__btn {
+    color: #7E7E82;
+}
 /* This applies from 0px to 600px */
 @media (max-width: 768px) {
     .about__text-block {
-        max-height: 72px;
+        max-height: 90px;
         overflow: hidden;
     }
-    .header__flex-box {
-
+    .about__p--margin {
+        margin-bottom: 1.95rem;
     }
 }
-
 
 /* This applies from 768px onwards */
 @media (min-width: 768px) {
     .about__text-block {
+        margin-right: 48px;
         max-width: 312px;
     }
     .content--flex {
@@ -164,6 +175,22 @@ body {
     .about__text-block {
         max-height: 160px;
     }
+    .content-image {
+        width: 360px;
+    }
 }
 
+/* This applies from 1120 onwards */
+@media (min-width: 1120px) {
+    .about__text-block {
+        max-width: 490px;
+        max-height: 160px;
+    }
+    .reviews {
+        display: block;
+    }
+    .content-image {
+        width: 531.35px;
+    }
+}
 
