@@ -124,6 +124,7 @@ body {
     font-size: 0.875rem;
     line-height:  1.125rem;
     color: #1B1C21;
+    overflow: hidden;
 }
 .about__read-more-btn {
     font-size: 1rem;
