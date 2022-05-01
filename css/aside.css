@@ -7,7 +7,7 @@ html, body {
     /*transform: matrix(-1, 0, 0, 1, 0, 0);*/
     min-height: 100%;
     padding: 18.73px 24px 32px 24px;
-    background: #fff url("/images/highlight_32.svg") no-repeat 0 116px;
+    background: #fff url("../images/highlight_32.svg") no-repeat 0 116px;
     color: #1B1C21;
     font-family: 'TT Lakes';
     font-size: 1rem;
