@@ -100,3 +100,12 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
+/* Мои добавки */
+a, a:hover, a:active, a:link {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
